@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title> JavaScript 2 </title>
+	</head>
+	<body>
+	<h1> JS2 </h1>
+	<img id = "myImage" onclick="changeImage()" src="Images/bulboff.png">
+	<p>click the lightbulb to turn it on/off.</p>
+
+	<p>Please input a number between 1 and 10:</p>
+	<input id="num" type="number">
+	<button type="button" onclick="checkNumber()">submit</button>
+	<p id="script1"></p>
+	<img id = "myImage1" onclick="changeImages()" src="Images/Picture1.jpg">
+	<p>click on the images to change it to another</p>
+	<h2> JavaScript Questions</h2>
+	<ul>
+		<li>If you want to utilize Captcha or for making sure that a password entered fits the criteria that you have estbalished is met or if you want to check that the username that was entered is in a database that you have set up for usernames.</li>
+		<li>It will act this way because you have it set that if the image does not match Images/bulbon it will change it to Images/bulboff.png So no matter what you change the pictuers to in the upper part as long as you don't change the function then you will just see it change the bulb constantly back to bulboff.</li>
+	</ul>
+	<script>
+		function changeImage() {
+			var image = document.getElementById('myImage');
+			if(image.src.match("Images/bulbon")) {
+				image.src = "Images/bulboff.png";
+			}
+			else {
+				image.src = "Images/bulbon.png";
+			}
+		}
+		function checkNumber() {
+			var x, text;
+			x = document.getElementById("num").value;
+			if(isNaN(x) || x < 1 || x > 10) {
+				text = "Input not valid";
+			}
+			else {
+				text = "Input Accepted";
+				changeImage();
+			}
+			document.getElementById("script1").innerHTML = text;
+		}
+		function changeImages() {
+			var image = document.getElementById('myImage1');
+			if(image.src.match("Images/bannerpic.jpg")) {
+				image.src = "Images/Picture1.jpg";
+			}
+			else {
+				image.src = "Images/bannerpic.jpg";
+			}
+		}
+	</script>
+</body>
+</html>

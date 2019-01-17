@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title> JavaScript 4 </title>
+	</head>
+	<body>
+		<h1> Rock, Paper, Scissors Game </h1>
+		<input type="image" src="Images/rock.jpg" onclick="rock_choice()" />
+		<input type="image" src="Images/paper.jpg" onclick="paper_choice()" />
+		<input type="image" src="Images/scissors.jpg" onclick="scissors_choice()" />
+
+		<p id="test"> Please click on one of the images above and play Rock, Paper, Scissors against the Computer </p>
+
+		<h2>JavaScript Questions</h2>
+		<ul>
+			<li>Breaking a big project into smaller pieces can help because it allows for you to understand what is needed for you to do at each step. And it is mainly important because then you can test your code at each step and then you can see if it works or doesn't work rather than doing it all at once and not understanding what to do when you did it all at once and it fails. Then it's hard to see what it wrong with your code unlike if you did it piece by piece and tested it at each point. </li>
+			<li> We want to keep checking and testing our code because then we can see where we went wrong as soon as possible rather than after we did alot of coding and realize that it's still broken. This makes it easier to debug code that is constantly checked on.</li>
+			<li> Something that you could do would be to have all 3 images but a number assigned to each image that the user can see. Then make two different text entry fields, one for player 1 and one for player 2. Then you have them submit their number one at a time hiding the players numbers, then once you get both numbers you can run a test that compares both of the numbers and will see who won based on those inputs on those text entry fields. </li>
+		<script>
+			function rock_choice() {
+				test = document.getElementById("test");
+				var number = Math.floor(Math.random() * 3 + 1);
+				if(number == 1) {
+					test.innerHTML = "<h1>You: </h1><img src = 'Images/rock.jpg'><h1> Computer: </h1><img src='Images/rock.jpg'><h1>It's a Tie</h1>";
+				}
+				else if(number == 2) {
+					test.innerHTML = "<h1>You: </h1><img src = 'Images/rock.jpg'><h1> Computer: </h1><img src='Images/paper.jpg'><h1>You Lose</h1>";
+				}
+				else {
+					test.innerHTML = "<h1>You: </h1><img src = 'Images/rock.jpg'><h1> Computer: </h1><img src='Images/scissors.jpg'><h1>You Win!</h1>";
+				}
+			}
+			function paper_choice() {
+				test = document.getElementById("test");
+				var number = Math.floor(Math.random() * 3 + 1);
+				if(number == 1) {
+					test.innerHTML = "<h1>You: </h1><img src= 'Images/paper.jpg'><h1> Computer: </h1><img src='Images/rock.jpg'><h1>You Win!</h1>";
+				}
+				else if(number == 2) {
+					test.innerHTML = "<h1>You: </h1><img src= 'Images/paper.jpg'><h1> Computer: </h1><img src='Images/paper.jpg'><h1>It's a Tie</h1>";
+				}
+				else {
+					test.innerHTML = "<h1>You: </h1><img src= 'Images/paper.jpg'><h1> Computer: </h1><img src='Images/scissors.jpg'><h1>You Lose</h1>";
+				}
+			}
+			function scissors_choice() {
+				test = document.getElementById("test");
+				var number = Math.floor(Math.random() * 3 + 1);
+				if(number == 1) {
+					test.innerHTML = "<h1>You: </h1><img src= 'Images/scissors.jpg'><h1> Computer: </h1><img src='Images/rock.jpg'><h1>You Lose</h1>";
+				}
+				else if(number == 2) {
+					test.innerHTML = "<h1>You: </h1><img src= 'Images/scissors.jpg'><h1> Computer: </h1><img src='Images/paper.jpg'><h1>You Win!</h1>";
+				}
+				else {
+					test.innerHTML = "<h1>You: </h1><img src= 'Images/scissors.jpg'><h1> Computer: </h1><img src='Images/scissors.jpg'><h1>It's a Tie</h1>";
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title> JavaScript 3</title>
+	</head>
+	<body>
+		<h1> JavaScript 3 </h1>
+		<p>Please enter a non-negative number.</p>
+		<input type="text" id="max_number" />
+		<input type="button" value="Count!" onclick="count_it()" />
+
+		<br>
+		<span id="counter"></span>
+		<h2> JavaScript Questions </h2>
+		<ul>
+			<li> If you were to have n = 1 + 2 and displayed n then it would print out 3. And if you had n = "1" + "2" and displayed n then it would print out "12". The difference here is that when you use + on two integers or numbers then you will get the mathematical instance of that expression that you give it and when you give it a + on two strings then you will get a concatination of the two strings.</li>
+			<li> += is an tool where if you say x += y then you would get x = x + y. So it allows you to add the current value that you have for the variable and add it to the variable that you are calling it, if you only had x = y. then that would make x be y, it wouldn't care about what is in x as long as it's the same type of y that you initialized x with. So with += you save the current variable and change it based on the new variable you are giving it</li>
+			<li> The two pieces of code that we have used thus far for where our JavaScript numbers are going to occur are in script and /script tags as well as the function attribute and then whatever the name of the function </li>
+		</ul>
+		<script> 
+			function count_it() {
+				var max_num = document.getElementById("max_number").value;
+				var numbers="";
+				for(var i=1; i<=max_num; i++)
+				{
+					if((i % 2) == 0) {
+						numbers += String(i) + "<br>"
+					}
+					else{
+						numbers += String(i) + " ";
+					}
+				}
+				document.getElementById("counter").innerHTML = numbers;
+			}
+		</script>
+	</body>
+</html>

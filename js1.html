@@ -1,0 +1,74 @@
+<html>
+	<head> 
+		<title> JS1 </title>
+	</head>
+	<body>
+		<h1> JavaScript 1 </h1>
+		<p id = "script1"> This is my first JavaScript! </p>
+		<button type="button" onclick="newFunction()"> Click Here! </button>
+		
+		<h1> JS + CSS</h1>
+		<p id="styleChange1">JS can do style too!</p>
+		<button type="button" onclick="styleChange1()">click here</button>
+		
+		<h1>one more time</h1>
+		<p id="styleChange2">something new</p>
+		<button type="button" onclick="styleChange2()">click here</button>
+		
+		<h2>JavaScript</h2>
+		<p id="script2"> You can change the content of this paragraph by clicking on the first button 
+		below me. Just remember that if you click the button below me that you will change me to
+		another paragraph and if you want me to go back then you will have to reload the page. 
+		YOU HAVE BEEN WARNED!</p>
+		<button type="button" onclick="contentChange1()">Change Content Here!</button>
+		<p id="styleChange3">If you click the button below me then you will change the style of this
+		text from what you see now to something that I have designed for it. It will work similarly
+		to the other two style change buttons above, but I've just modified it to change the
+		style in different ways.</p>
+		<button type="button" onclick="styleChange3()">Change Style Here!</button>
+		<p id="styleandscript1">If you click on the button below me then you will not only change
+		this content but also the style of the new content that will appear. So be aware that
+		once you click on that button you will lose this paragraph and also the style that this
+		paragraph had at the beginning.</p>
+		<button type="button" onclick="contentChange2();">Change Style and 
+		Content Here!</button>
+		
+		<script>
+		function newFunction() {
+			document.getElementById("script1").innerHTML = "It worked!";
+		}
+		function styleChange1(){
+			var x = document.getElementById("styleChange1");
+			x.style.fontSize = "25px";
+			x.style.color = "red";
+		}
+		function styleChange2(){
+			var x = document.getElementById("styleChange2");
+			x.style.fontsize = "25px";
+			x.style.color = "red";
+			x.style.backgroundColor = "green";
+		}
+		function contentChange1() {
+			document.getElementById("script2").innerHTML = "Hello I'm the new content that you have";
+			document.getElementById("script2").innerHTML += " changed from the previous one. Don't worry he's not dead, just reload the page";
+		}
+		function styleChange3() {
+			var x = document.getElementById("styleChange3");
+			x.style.fontSize = "30px";
+			x.style.fontFamily = "Arial";
+			x.style.color = "blue";
+		}
+		function contentChange2() {
+			document.getElementById("styleandscript1").innerHTML = "RAWR!";
+			var x = document.getElementById("styleandscript1");
+			x.style.fontSize = "100px";
+			x.style.fontFamily = "Arial";
+			x.style.color = "red";
+			x.style.backgroundColor = "black";
+		}
+		</script>
+		
+	</body>
+</html>
+	
+		
