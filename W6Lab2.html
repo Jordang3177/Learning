@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<h1> JavaScript 1 </h1>
+<p id="script1"> This is my first Javascript! </p>
+
+<button type="button" onclick="newFunction()"> Click here!</button>
+
+<h1> Javascript + CSS </h1>
+
+<p id="styleChange1"> Click here for something interesting </p>
+
+<button type="button" onclick="styleChange1()"> Click here!</button>
+
+<h2> Trying it one more time! </h2>
+
+<p id="styleChange2"> Another interesting Javascript function </p>
+
+<button type="button" onclick="styleChange2()"> Click here!</button>
+
+<h2> JavaScript Homework </h2>
+
+<p id="contentChange3"> This paragraph will be able to change once you click on the button below. I promise it changes into a much better paragraph than this one.</p>
+
+<button type="button" onclick="contentChange3()"> Click here!</button>
+
+<p id="styleChange3"> This paragraph will be able to have it's styles changed once you click on the button below. If you would like to see what I did to this paragraph click the button quickly! Be warned this paragraph might get alot bigger.</p> 
+
+<button type="button" onclick="styleChange3()"> Click here!</button>
+
+<script>
+	function newFunction() {
+		document.getElementById("script1").innerHTML = "It worked!";
+	}
+	
+	function secondFunction() {
+		document.getElementById("script2").innerHTML = "It worked a second time";
+	}
+	
+	function styleChange1() {
+		var x = document.getElementById("styleChange1");
+		x.style.fontSize = "25px";
+		x.style.color = "red";
+	}
+	
+	function styleChange2() {
+		var x = document.getElementById("styleChange2");
+		x.style.backgroundColor = "green";
+		x.style.color = "yellow";
+		x.style.border = "solid";
+	}
+	
+	function contentChange3() {
+		document.getElementById("contentChange3").innerHTML = "Well I think this paragraph is much better than the previous one! I always keep my promises!";
+	}
+	
+	function styleChange3() {
+		var x = document.getElementById("styleChange3");
+		x.style.backgroundColor = "blue";
+		x.style.color = "red";
+		x.style.fontSize = "40px";
+	}
+
+</script>
+
+
+</body>
+</html>

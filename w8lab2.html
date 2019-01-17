@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>w8Lab2</title>
+</head>
+
+<body>
+
+<h1> JavaScript 3 </h1>
+
+<p> Please enter a non-negative number:</p>
+<input type="text" id="max_number" />
+<input type="button" value"Count!" onclick="count_it()" />
+
+<br>
+<span id="counter"></span>
+
+<h2> JavaScript Questions </h2>
+
+<ul>
+	<li>if you have n = 1 + 2 then the value of n would be 3, but if you had n = "1" + "2" then the value of n would be "12". This is due to the type of elements that are in the value of n. For the first N the values inside the variable are all numbers so they are just added together, and the second N has types of String so it will print out a String and when two Strings are added together you will get a String that simply puts the two Strings together.</li>
+    <li>+= is an operator for when you need a variable to be added to the thing on the opposite end of the operator to it. So for example if you have n += 1 this literally translates to n = n + 1. </li>
+    <li>Id tags will make show that this element will change based on what is in the Id code itself. The onclick code will also force a change on the element of the code when something is done and for this specific instance it will change the element of our code once you click on it. Buttons could be another place where the code is changed based on input. it's usually the starting place for Javascript to look for things for the functions to start acting as you input them as. </li>
+    </ul>
+<script>
+
+function count_it()
+{
+	var max_num = document.getElementById("max_number").value;
+	var numbers = "";
+	for (var i = 1; i <= max_num; i++) {
+		if((i % 10) == 0) {
+			numbers = numbers + String(i) + "<br>";
+		}
+		else {
+			if(i < 10) {
+				numbers = numbers + "" + String(i) + "&nbsp &nbsp";
+			}
+			else if(i < 100) {
+				numbers = numbers + "" + String(i) + "&nbsp"
+			}
+			else {
+				numbers = numbers + String(i) + "&nbsp";
+			}
+		}
+	}
+	document.getElementById("counter").innerHTML = numbers;
+}
+
+</script>
+</body>
+</html>
