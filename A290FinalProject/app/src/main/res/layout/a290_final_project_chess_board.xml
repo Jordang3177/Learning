@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+a290_final_project_chess_board.xml
+This is where the board is created and all the different images will be referenced to create
+a true chess board.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/ChessHorizontalMargin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/ChessHorizontalMargin"
+    android:paddingTop="@dimen/ChessVerticalMargin"
+    android:paddingBottom="@dimen/ChessVerticalMargin"
+    tools:context=".A290FinalProjectChessGame"
+    android:background="@color/ChessBackground">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="top|center"
+        android:clickable="true"
+        android:padding="10dp"
+        android:id="@+id/ChessBoard"
+        android:nestedScrollingEnabled="false"
+        >
+
+        <TableRow
+            style="@style/ChessTableRow"
+            android:id="@+id/ChessRow0"
+            >
+
+            <ImageView
+                android:layout_column="0"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_rook"
+                />
+
+            <ImageView
+                android:layout_column="1"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_knight"
+                />
+
+            <ImageView
+                android:layout_column="2"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_bishop"
+                />
+
+            <ImageView
+                android:layout_column="3"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_queen"
+                />
+
+            <ImageView
+                android:layout_column="4"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_king"
+                />
+
+            <ImageView
+                android:layout_column="5"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_bishop"
+                />
+
+            <ImageView
+                android:layout_column="6"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_knight"
+                />
+
+            <ImageView
+                android:layout_column="7"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_rook"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/ChessTableRow"
+            android:id="@+id/ChessRow1"
+            >
+
+            <ImageView
+                android:layout_column="0"
+                android:layout_width="35dp"
+                style="@style/ChessLeftCell"
+                android:src="@drawable/black_pawn"
+                />
+
+            <ImageView
+                android:layout_column="1"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_pawn"
+                />
+
+            <ImageView
+                android:layout_column="2"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_pawn"
+                />
+
+            <ImageView
+                android:layout_column="3"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_pawn"
+                />
+
+            <ImageView
+                android:layout_column="4"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_pawn"
+                />
+
+            <ImageView
+                android:layout_column="5"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_pawn"
+                />
+
+            <ImageView
+                android:layout_column="6"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/black_pawn"
+                />
+
+            <ImageView
+                android:layout_column="7"
+                android:layout_width="35dp"
+                style="@style/ChessRightCell"
+                android:src="@drawable/black_pawn"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/ChessTableRow"
+            android:id="@+id/ChessRow2"
+            >
+
+            <ImageView
+                android:layout_column="0"
+                android:layout_width="35dp"
+                style="@style/ChessLeftCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="1"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="2"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="3"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="4"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="5"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="6"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="7"
+                android:layout_width="35dp"
+                style="@style/ChessRightCell"
+                android:src="@drawable/board_space"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/ChessTableRow"
+            android:id="@+id/ChessRow3"
+            >
+
+            <ImageView
+                android:layout_column="0"
+                android:layout_width="35dp"
+                style="@style/ChessLeftCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="1"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="2"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="3"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="4"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="5"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="6"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="7"
+                android:layout_width="35dp"
+                style="@style/ChessRightCell"
+                android:src="@drawable/board_space"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/ChessTableRow"
+            android:id="@+id/ChessRow4"
+            >
+
+            <ImageView
+                android:layout_column="0"
+                android:layout_width="35dp"
+                style="@style/ChessLeftCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="1"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="2"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="3"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="4"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="5"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="6"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="7"
+                android:layout_width="35dp"
+                style="@style/ChessRightCell"
+                android:src="@drawable/board_space"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/ChessTableRow"
+            android:id="@+id/ChessRow5"
+            >
+
+            <ImageView
+                android:layout_column="0"
+                android:layout_width="35dp"
+                style="@style/ChessLeftCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="1"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="2"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="3"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="4"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="5"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="6"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/board_space"
+                />
+
+            <ImageView
+                android:layout_column="7"
+                android:layout_width="35dp"
+                style="@style/ChessRightCell"
+                android:src="@drawable/board_space"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/ChessTableRow"
+            android:id="@+id/ChessRow6"
+            >
+
+            <ImageView
+                android:layout_column="0"
+                android:layout_width="35dp"
+                style="@style/ChessLeftCell"
+                android:src="@drawable/white_pawn"
+                />
+
+            <ImageView
+                android:layout_column="1"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_pawn"
+                />
+
+            <ImageView
+                android:layout_column="2"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_pawn"
+                />
+
+            <ImageView
+                android:layout_column="3"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_pawn"
+                />
+
+            <ImageView
+                android:layout_column="4"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_pawn"
+                />
+
+            <ImageView
+                android:layout_column="5"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_pawn"
+                />
+
+            <ImageView
+                android:layout_column="6"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_pawn"
+                />
+
+            <ImageView
+                android:layout_column="7"
+                android:layout_width="35dp"
+                style="@style/ChessRightCell"
+                android:src="@drawable/white_pawn"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/ChessTableRow"
+            android:id="@+id/ChessRow7"
+            >
+
+            <ImageView
+                android:layout_column="0"
+                android:layout_width="35dp"
+                style="@style/ChessLeftCell"
+                android:src="@drawable/white_rook"
+                />
+
+            <ImageView
+                android:layout_column="1"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_knight"
+                />
+
+            <ImageView
+                android:layout_column="2"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_bishop"
+                />
+
+            <ImageView
+                android:layout_column="3"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_queen"
+                />
+
+            <ImageView
+                android:layout_column="4"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_king"
+                />
+
+            <ImageView
+                android:layout_column="5"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_bishop"
+                />
+
+            <ImageView
+                android:layout_column="6"
+                android:layout_width="35dp"
+                style="@style/ChessMiddleCell"
+                android:src="@drawable/white_knight"
+                />
+
+            <ImageView
+                android:layout_column="7"
+                android:layout_width="35dp"
+                style="@style/ChessRightCell"
+                android:src="@drawable/white_rook"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

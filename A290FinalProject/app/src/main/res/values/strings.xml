@@ -1,0 +1,74 @@
+<!--
+strings.xml
+This is where we create the strings that are needed for use in the app.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<resources>
+    <string name="AppName">Game Blitz</string>
+    <string name="SudokuName">Sudoku Blitz</string>
+    <string name="TicTacToeName">TicTacToe Blitz</string>
+    <string name="ChessName">Chess Blitz</string>
+    <string name="action_settings">Settings</string>
+    <string name="MainMenuSudoku">Sudoku</string>
+    <string name="MainMenuTicTacToe">TicTacToe</string>
+    <string name="MainMenuChess">Chess</string>
+    <string name="MainMenuAbout">About</string>
+    <string name="MainMenuExit">Exit</string>
+    <string name="SudokuMenuNewGame">New Game</string>
+    <string name="SudokuMenuAbout">About</string>
+    <string name="SudokuMenuMainMenu">Main Menu</string>
+    <string name="SudokuMenuExit">Exit</string>
+    <string name="TicTacToeMenuNewGame">New Game</string>
+    <string name="TicTacToeMenuAbout">About</string>
+    <string name="TicTacToeMenuMainMenu">Main Menu</string>
+    <string name="TicTacToeMenuExit">Exit</string>
+    <string name="ChessMenuNewGame">New Game</string>
+    <string name="ChessMenuAbout">About</string>
+    <string name="ChessMenuMainMenu">Main Menu</string>
+    <string name="ChessMenuExit">Exit</string>
+    <string name="MainMenuAboutText">In this app you will find three games in which you will be
+    asked to complete the games before exiting the app or you will lose all progress. We made the
+    app this way to be devoted to the people around the world who enjoy challenges of completing
+    games in one sitting and we hope that we have accomplished this. If there are any issues with
+    the app please contact the main developer at Jordang3177@gmail.com</string>
+    <string name="AboutName">About Game Blitz</string>
+    <string name="SudokuAboutText">In this part of the app you will find the Sudoku portion of the
+    app. Sudoku is a 9x9 game in which you have to complete the board, and each row, column, and box
+    cannot have the same number in any of the three. Once you meet all these requirements and
+    the board is filled then you have won the game!</string>
+    <string name="SudokuAboutName">About Sudoku Blitz</string>
+    <string name="SudokuGameTitle">Difficulty</string>
+    <string name="SudokuEasyLabel">Easy</string>
+    <string name="SudokuMediumLabel">Medium</string>
+    <string name="SudokuHardLabel">Hard</string>
+    <string name="TicTacToeAboutText">In this part of the app you will find the TicTacToe portion of the app.
+    TicTacToe is a game played on a 3x3 board where you need to get three of your pieces in a row
+    there are traditionally two players, one for the x, and one for the os. Players rotate each turn
+    and the game either ends when one person has three of their tokens in 3 of a row, or when the
+    board is filled which results in a draw.</string>
+    <string name="ChessAboutText">In this part of the app you will find the Chess portion of the app.
+    Chess is a game in which two players try to defeat the other by taking out their king while
+    protecting their own. You have a multitude of pieces each with their own movement rules.
+    The pawn which can move either 1 space or 2 spaces forward on the first move, and may only
+    take an opposing piece if it is diagonal to it and if it ever reaches the other side of the board
+    then it will become one of the pieces you have lost. The rook which can move in straight lines.
+    The Bishop which can move in diagonal lines. The knight which can move in an L shape.
+    The Queen which can move any direction. The King which can move in any direction but only 1 space
+    at a time.</string>
+    <string name="CannotDo">Cannot do this</string>
+    <string name="SudokuKeypadTitle">Sudoku KeyPad</string>
+    <string name="SizeOfBoard">3</string>
+    <string name="X">"   X   "</string>
+    <string name="O">"   O   "</string>
+    <string name="none">"          "</string>
+    <string name="TicTacToeContinueScreenLabel">Want to play TicTacToe? Click here!</string>
+    <string name="TicTacToeResetGame">Reset Game</string>
+    <string name="ChessContinueScreenLabel">Want to play Chess? Click here!</string>
+    <string name="ChessCellWidthSize">35dp</string>
+    <string name="TicTacToeBackButton">Back to Menu</string>
+
+</resources>

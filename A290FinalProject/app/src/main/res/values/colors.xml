@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+colors.xml
+This is where we create the colors that are needed for use in the app.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background">#ffe4a6</color>
+    <color name="puzzleBackground">#ffdead</color>
+    <color name="puzzleHiLite">#9442fd</color>
+    <color name="puzzleLight">#006400</color>
+    <color name="puzzleDark">#6d063a</color>
+    <color name="puzzleForeground">#006400</color>
+    <color name="puzzleSelected">#159624</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="MainBackground">#ACDF87</color>
+    <color name="MainTextColor">#191970</color>
+    <color name="SudokuBackground">#29bdc1</color>
+    <color name="SudokuMainTextColor">#000000</color>
+    <color name="TicTacToeBackground">#eaff7b</color>
+    <color name="TicTacToeMainTextColor">#000000</color>
+    <color name="ChessBackground">#F8A99F</color>
+    <color name="ChessMainTextColor">#000000</color>
+</resources>

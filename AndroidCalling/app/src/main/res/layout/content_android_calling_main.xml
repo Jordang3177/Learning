@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- content_android_calling_main.xml
+ Primary Layout file for this Project
+ Created By: Jordan Graves
+ Created on: 1/28/2019
+ Last Modified by: Jordan Graves
+ Last Modified on: 1/29/2019
+ Assignment/Project: A290 Android Development, Homework Project 1
+ Part of: Android Calling Project, refers to AndroidCallingMainActivity.java
+ -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AndroidCallingMainActivity"
+    tools:showIn="@layout/activity_android_calling_main">
+    <!-- In this TextView we have a reference to the string that was made in the Strings.xml file that
+     states "Hello Universe!!! Android Calling!" -->
+    <TextView
+        android:id="@+id/main_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="85dp"
+        android:text="@string/hello_universe"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/large_textView" />
+    <!-- In this Button we have a reference to the string that was made in the Strings.xml file that
+     states "My First Button" This is Left Justified-->
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/FirstButton"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- In this TextView we have a reference to the string that was made in the Strings.xml file that
+    states "My First Large Text Box" This is Right Justified-->
+    <TextView
+        android:id="@+id/large_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginTop="124dp"
+        android:text="@string/FirstLargeText"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        app:layout_constraintBottom_toTopOf="@+id/main_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- In this CheckBox we have a reference to the string that was made in the Strings.xml file that
+     states "My Home Screen Check Box" This is Centered Horizontally-->
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/HomeScreenCheckbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_textview" />
+    <!-- In this Switch we have a reference to the string that was made in the Strings.xml file that
+     states "My First Switch" -->
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/MyFirstSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/main_textview"
+        app:layout_constraintEnd_toStartOf="@+id/large_textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_button" />
+
+</android.support.constraint.ConstraintLayout>

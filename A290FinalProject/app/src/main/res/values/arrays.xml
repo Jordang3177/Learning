@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+arrays.xml
+This is where we create the arrays that are needed for use in the app.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<resources>
+    <array name="difficulty">
+        <item>@string/SudokuEasyLabel</item>
+        <item>@string/SudokuMediumLabel</item>
+        <item>@string/SudokuHardLabel</item>
+    </array>
+    <array name="TicTacToeContinue">
+        <item>@string/TicTacToeContinueScreenLabel</item>
+    </array>
+    <array name="ChessContinue">
+        <item>@string/ChessContinueScreenLabel</item>
+    </array>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+a290_final_project_tictactoe.xml
+This is the main page for the tictactoe part of the app with the content being referenced here too.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/content_tictactoe_a290_final_project"/>
+
+</android.support.design.widget.CoordinatorLayout>

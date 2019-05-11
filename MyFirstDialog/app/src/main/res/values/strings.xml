@@ -1,0 +1,15 @@
+<resources>
+    <!-- strings.xml
+Primary strings file for this project
+Created by: Jordan Graves
+Created on: 2/2/2019
+Last Modified by: Jordan Graves
+Last Modified on: 2/7/2019
+Assignment/Project: A290 Android Development Homework Project 2
+Part of: MyFirstDialog
+    -->
+    <string name="app_name">My First Dialog</string>
+    <string name="action_settings">Settings</string>
+    <string name="talk_to_me">This is supposed to be a dialogue! Talk to me!</string>
+    <string name="my_click_dialog">Click to display a Dialog</string>
+</resources>

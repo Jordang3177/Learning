@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+a290_final_project_sudoku_keypad.xml
+This is the Sudoku Keypad that I created and to be used in the Keypad class
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SudokuKeypad"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableRow>
+        <Button android:id="@+id/SudokuKeyPad1"
+            android:text="1">
+        </Button>
+
+        <Button
+            android:id="@+id/SudokuKeyPad2"
+            android:text="2"></Button>
+        <Button android:id="@+id/SudokuKeyPad3"
+            android:text="3">
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/SudokuKeyPad4"
+            android:text="4">
+        </Button>
+        <Button android:id="@+id/SudokuKeyPad5"
+            android:text="5">
+        </Button>
+        <Button android:id="@+id/SudokuKeyPad6"
+            android:text="6">
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/SudokuKeyPad7"
+            android:text="7">
+        </Button>
+        <Button android:id="@+id/SudokuKeyPad8"
+            android:text="8">
+        </Button>
+        <Button android:id="@+id/SudokuKeyPad9"
+            android:text="9">
+        </Button>
+    </TableRow>
+
+</TableLayout>

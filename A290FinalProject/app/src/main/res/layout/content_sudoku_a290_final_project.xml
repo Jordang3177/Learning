@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+content_sudoku_a290_final_project.xml
+This is the main content page for the sudoku part of the app where all the buttons and textviews are created.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SudokuBackground">
+
+
+    <TextView
+        android:id="@+id/SMText"
+        android:layout_width="149dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/SudokuName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/SMNewGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        android:textColor="@color/SudokuMainTextColor"/>
+
+    <Button
+        android:id="@+id/SMNewGame"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/SudokuMenuNewGame"
+        app:layout_constraintBottom_toTopOf="@+id/SMAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SMText" />
+
+    <Button
+        android:id="@+id/SMAbout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/SudokuMenuAbout"
+        app:layout_constraintBottom_toTopOf="@+id/SMMainMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SMNewGame" />
+
+    <Button
+        android:id="@+id/SMMainMenu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/SudokuMenuMainMenu"
+        app:layout_constraintBottom_toTopOf="@+id/SMExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SMAbout" />
+
+    <Button
+        android:id="@+id/SMExit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/SudokuMenuExit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SMMainMenu" />
+</android.support.constraint.ConstraintLayout>

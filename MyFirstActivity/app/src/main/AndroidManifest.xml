@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.indiana.graves5.myfirstactivity">
+
+    <!--
+    AndroidManifest.xml
+    This is the manifest file for all of the application layouts for MyFirstActivity
+    Created by: Jordan Graves
+    Created on: 1/31/2019
+    Last Modified by: Jordan Graves
+    Last Modified on: 2/7/2019
+    Assignment/Project: A290 Android Development Homework 2
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Dialog"> <!-- This line was modified to become @android:style/Theme.Dialog -->
+        <activity
+            android:name=".MyFirstActivityMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

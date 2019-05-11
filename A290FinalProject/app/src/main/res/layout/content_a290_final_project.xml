@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+content_a290_final_project.xml
+This is the main content page for the main part of the app where all the buttons and textviews are created.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".A290FinalProject"
+    tools:showIn="@layout/a290_final_project_main_activity"
+    android:background="@color/MainBackground">
+
+    <TextView
+        android:id="@+id/MMTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AppName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/MMSudoku"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:textColor="@color/MainTextColor"/>
+
+    <Button
+        android:id="@+id/MMSudoku"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="125dp"
+        android:text="@string/MainMenuSudoku"
+        app:layout_constraintBottom_toTopOf="@+id/MMTicTacToe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MMTitle" />
+
+    <Button
+        android:id="@+id/MMTicTacToe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="125dp"
+        android:text="@string/MainMenuTicTacToe"
+        app:layout_constraintBottom_toTopOf="@+id/MMChess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MMSudoku" />
+
+    <Button
+        android:id="@+id/MMChess"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="125dp"
+        android:text="@string/MainMenuChess"
+        app:layout_constraintBottom_toTopOf="@+id/MMAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MMTicTacToe" />
+
+    <Button
+        android:id="@+id/MMAbout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="125dp"
+        android:text="@string/MainMenuAbout"
+        app:layout_constraintBottom_toTopOf="@+id/MMExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MMChess" />
+
+    <Button
+        android:id="@+id/MMExit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="125dp"
+        android:text="@string/MainMenuExit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MMAbout" />
+
+
+</android.support.constraint.ConstraintLayout>

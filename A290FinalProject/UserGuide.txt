@@ -1,0 +1,81 @@
+User's Guide:
+In this application I have attempted to allow for the idea that some people like to complete 
+apps in one sitting and with this there is no continue button in any of the games of the app.
+
+MAIN:
+
+At the Main page you will see the Game Blitz text at the top, then you will see Five buttons:
+One being Sudoku, Another being TicTacToe, Another being Chess, Another being About, and the last one being Exit.
+
+If you click on Sudoku then you will be guided to another part of the App that is meant for the Sudoku Game.
+If you click on TicTacToe then you will be guided to another part of the App that is meant for the TicTacToe Game.
+If you click on Chess then you will be guided to another part of the app that is meant for the Chess Game.
+If you click on About then you will be guided to a screen in which it describes what this app is all about. If you wish to exit this page please click the back 
+button on the phone or AVD.
+If you click on Exit then you will exit the game. Sadly at the moment, this doesn't really work as intended. For example if you were to go from the main menu
+and click on a game then go back to the main menu without clicking exit on the game that you clicked on and then click exit at the main menu it will only close that
+intent of the app. I will fix this in a later version of my app.
+
+SUDOKU:
+
+
+In this menu you will see four buttons:
+One being New Game, Another being About, Another being Main Menu, and the last one being Exit.
+
+If you click on the New Game button then you will be asked to Select the difficulty in an array dialog box.
+Once you select a Difficulty you will then be lead into the game board that you can interact with.
+
+At the game you will be able to click any tile you desire, If you click on a tile then a keypad will appear with the numbers from 1-9
+Once you click on a number in the Keypad the change from whatever was there to the number you selected.
+Just remember you can change any number and tile that you desire, but we ask that you remember the rules of Sudoku nad know what you can and cannot put in a tile.
+Later I will add the functionality to be able only choose the numbers are able to fit in that tile, and not be able to change the original numbers. 
+I will also need to add the end state when the game is completed.
+
+If you were to click on the About page you will be guided to a screen which describes how to play Sudoku. If you wish to exit this page please click the back 
+button on the phone or AVD.
+
+If you were to click on the Main Menu button then you will be guided back to the Main Menu of the App.
+
+If you click on the Exit Button then it will exit the game. Sadly right now there is  a bug with the app and it seems to be that it only exits the game that you are in
+and not the entire app ?itself. This will be fixed in later versions of the app.
+
+TICTACTOE:
+
+In this menu you will see four buttons:
+One being New Game, Another being About, Another being Main Menu, and the last one being Exit.
+
+If you click on the New Game button then you will be asked to Select if you really want to continue or not.
+Once you select the continue part, then you will be lead to the game board. Here you will be able to play with another player one being 'X', and another being 'O'
+The 'X' player will start first, and all you have to do for each player is click on the square that you want to occupy that isn't already taken and your piece will go there.
+This will go on until someone has three in a row or until the board is filled. If someone has three in a row then the game stops and a winner is declared. 
+If the board is filled and no winner is found then a draw is declared. 
+Once a winner is delcared or a draw is declared then the board cannot be clicked on again to change it's state, and if you want to play again just click on the reset button.
+If you want to go back to the menu then you can click on the Back to Menu button.
+
+If you click on the About button then you will be guided to a screen which descirbes how you play TicTacToe. If you wish to exit this page please click the back 
+button on the phone or AVD.
+
+If you were to click on the Main Menu button then you will be guided back to the Main Menu of the App.
+
+If you click on the Exit Button then it will exit the game. Sadly right now there is  a bug with the app and it seems to be that it only exits the game that you are in
+and not the entire app ?itself. This will be fixed in later versions of the app.
+
+
+CHESS:
+
+In this menu you will see four Buttons:
+One being New Game, Another being About, Another being Main Menu, And the last one being Exit.
+
+If you click on the New Game buttong then you will be asked if you really want to continue or not.
+Once you select that you want to continue, then you will be lead to the game board. There is no functionality on this board, it only displays the content at the moment.
+I am going to be working on making this app work fully in later iterations.
+
+If you click on the About Button then you will be guided to a screen which describes how to play Chess. If you wish to exit this page please click the back 
+button on the phone or AVD.
+
+If you were to click on the Main Menu button then you will be guided back to the Main Menu of the App.
+
+If you click on the Exit Button then it will exit the game. Sadly right now there is  a bug with the app and it seems to be that it only exits the game that you are in
+and not the entire app ?itself. This will be fixed in later versions of the app.
+
+

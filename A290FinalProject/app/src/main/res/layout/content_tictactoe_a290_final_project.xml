@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+content_tictactoe_a290_final_project.xml
+This is the main content page for the tictactoe part of the app where all the buttons and textviews are created.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TicTacToeBackground">
+
+    <TextView
+        android:id="@+id/TTTText"
+        android:layout_width="174dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="99dp"
+        android:text="@string/TicTacToeName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/TTTNewGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/TicTacToeMainTextColor"/>
+
+    <Button
+        android:id="@+id/TTTNewGame"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/TicTacToeMenuNewGame"
+        app:layout_constraintBottom_toTopOf="@+id/TTTAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TTTText" />
+
+    <Button
+        android:id="@+id/TTTAbout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/TicTacToeMenuAbout"
+        app:layout_constraintBottom_toTopOf="@+id/TTTMainMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TTTNewGame" />
+
+    <Button
+        android:id="@+id/TTTMainMenu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/TicTacToeMenuMainMenu"
+        app:layout_constraintBottom_toTopOf="@+id/TTTExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TTTAbout" />
+
+    <Button
+        android:id="@+id/TTTExit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="116dp"
+        android:text="@string/TicTacToeMenuExit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TTTMainMenu" />
+
+</android.support.constraint.ConstraintLayout>
