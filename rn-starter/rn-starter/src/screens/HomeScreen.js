@@ -1,17 +1,19 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import { setRecoveryProps } from 'expo/build/ErrorRecovery/ErrorRecovery';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
   <View> 
     <Text style={styles.text}>What are you doing!!!!!</Text>
     <Button
-      onPress={() => console.log('Button Pressed')} 
+      onPress={() => navigation.navigate('Components')} 
       title="Go to Components Demo" 
     />
-    <TouchableOpacity onPress={() => console.log('List Pressed')}>
-      <Text>Go to List Demo</Text>
-    </TouchableOpacity>
+    <Button
+      title="Go to List Demo"
+      onPress={() => navigation.navigate('List')}
+    />
   </View>
   );
 };  
