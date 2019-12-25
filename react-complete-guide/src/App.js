@@ -36,6 +36,7 @@ class App extends Component {
     }
     // This is another way to do the same thing as above instead of using the spread operator.
     // const person = Object.assign({}, this.state.persons[personIndex]);
+    
 
     person.name = event.target.value;
 
