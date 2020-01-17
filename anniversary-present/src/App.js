@@ -1,12 +1,18 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from "react";
+import Layout from './hoc/Layout/Layout';
+import Present from './containers/Present/Present';
+import "./App.css";
 
-function App() {
-  return (
-    <div>
-
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Layout>
+          <Present />
+        </Layout>
+      </div>
+    );
+  }
 }
 
 export default App;
