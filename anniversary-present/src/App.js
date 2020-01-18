@@ -5,7 +5,7 @@ import Present from './containers/Present/Present';
 class App extends Component {
   render() {
     return (
-      <div className={classes.App}>
+      <div>
         <Layout>
           <Present />
         </Layout>
