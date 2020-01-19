@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import Layout from './hoc/Layout/Layout';
-import Present from './containers/Present/Present';
+import Aux from "./hoc/Aux/Aux";
+import Present from "./Containers/Present/Present";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Layout>
+      <Aux>
+        <BrowserRouter>
           <Present />
-        </Layout>
-      </div>
+        </BrowserRouter>
+      </Aux>
     );
   }
 }
