@@ -37,7 +37,7 @@ class Blog extends Component {
                 <Switch>
                     {this.state.auth ? <Route path="/new-post" component={NewPost} /> : null}
                     <Route path="/posts" component={Posts} />
-                    {/* Way to redirect on unknonw paths. <Route render={() => <h1>Not found</h1>} /> */}
+                    {/* Way to redirect on unknonw paths. For 504 errors. <Route render={() => <h1>Not found</h1>} /> */}
                     <Redirect from="/" to="/posts" />
                 </Switch>
             </div>
