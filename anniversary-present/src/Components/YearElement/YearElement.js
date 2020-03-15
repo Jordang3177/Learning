@@ -6,7 +6,7 @@ const yearelement = props => {
   return (
     <Aux>
       <p className={classes.Year}>{props.year}</p>
-      <p className={classes.Text}>{props.text}</p>
+      <div className={classes.Text}>{props.text}</div>
     </Aux>
   );
 };
