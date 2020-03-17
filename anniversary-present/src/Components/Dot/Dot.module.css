@@ -1,0 +1,25 @@
+.right {
+    height: 25px;
+    width: 25px;
+    background-color: #0a34a7;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -15px;
+    margin-bottom: -7px;
+    margin-right: 10px;
+  }
+
+.left {
+    height: 25px;
+    width: 25px;
+    background-color: #0a34a7;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -15px;
+    margin-bottom: -7px;
+    margin-right: -110px;
+}
+
+.push {
+    margin-bottom: 50px;
+}

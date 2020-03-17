@@ -7,6 +7,7 @@ import TextFileReader from '../../hoc/FileReader/TextFileReader';
 class Timeline extends Component {
     render() {
         var n = this.props.location.pathname.length
+        var year = 2014 + Number(this.props.location.pathname.slice(5,n)) - 1;
         var title = this.props.location.pathname.slice(1, 5) + " " + this.props.location.pathname.slice(5, n);
         console.log(this.props.text);
         const text = <TextFileReader txt = {this.props.text}></TextFileReader>
@@ -15,7 +16,7 @@ class Timeline extends Component {
         return (
             <div>
                 <YearElement year={title} text={text}/>
-                <BranchingLine />
+                <BranchingLine year={year}/>
             </div>
         )
     }
