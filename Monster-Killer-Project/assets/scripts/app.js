@@ -65,7 +65,7 @@ function endRound() {
         setPlayerHealth(currentPlayerHealth); 
         alert('You would be dead, but the bonus life saved you!'); 
     }
-    else if (currentMonsterHealth <= 0 && currentPlayerHealth > 0) {
+    if (currentMonsterHealth <= 0 && currentPlayerHealth > 0) {
         alert('You won!');
         writeToLog(LOG_EVENT_GAME_OVER, 'PLAYER_WON', currentMonsterHealth, currentPlayerHealth);
         reset();
