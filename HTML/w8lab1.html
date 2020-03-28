@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>w8lab1</title>
+</head>
+
+<body>
+<h1>JavaScrip2</h1><br>
+
+
+<img id="myImage" onclick="changeImage()" src="images/bulboff.png" />
+<p>Click the lightbulb to turn it on or off.</p>
+
+<p>Pleaes input a number between 1 and 10: </p>
+<input id="num" type="number">
+<button type = "button" onclick="checkNumber()">Submit</button>
+
+<p id="script1"></p>
+
+<h2>JavaScript Questions</h2>
+<ul>
+	<li>Validation is useful if you are having someone type in a phone number or email address and you want to make sure it is a valid email address or a possible phone number. </li>
+    <li>When you either of the images so let's say that we have bulboff as the image and then we have another image as the second image. Once you click on the first image it will just go to the second image, it does not have to correspond to the first image in any way. All that needs to be done is that you code it correctly and then it will alternate between both images as you click the images. Something else to note is that it's not actually turning on the lightbuld but instead it is just changing the images.</li>
+
+<script>
+function changeImage() {
+	var image = document.getElementById('myImage');
+	if (image.src.match("images/bulbon.png")) {
+		image.src = "images/bulboff.png";
+	} else {
+		image.src = "images/bulbon.png";
+	}
+}
+function checkNumber() {
+	var x, text;
+	
+	x = document.getElementById("num").value;
+	
+	if(isNaN(x) || x < 1 || x > 10) {
+		text = "Input not valid";
+	}
+	else {
+		text = "Input Accepted";
+		changeImage();
+	}
+	document.getElementById("script1").innerHTML = text;
+}
+
+</script>
+</body>
+</html>

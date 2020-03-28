@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+table {
+	border-width: thin;
+	border-color: black;
+	border-style: solid;
+}
+
+.tablehead {
+	background-color: black;
+	color: white;
+}
+.tablecolumn2 {
+	background-color: red;
+}
+.tablegreen {
+	background-color: green;
+}
+.tableblue {
+	background-color: blue;
+}
+.tablefont {
+	font-size: 20px;
+}
+.tablefont2 {
+	font-size: 30px;
+}
+

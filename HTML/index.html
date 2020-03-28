@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title> I101 Home Page </title>
+		<link href="main.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<h1> I101 Home Page </h1>
+		<hr />
+		<img id = "myImage1" onclick="changeImages()" src="Images/Picture1.jpg">
+		<p>click on the images to change it to another</p>
+		<br />
+		<img src="http://pages.iu.edu/~graves5/i101/Images/Picture2.JPG" />
+		<br />
+		<h2> My Background </h2>
+		<p> I'm from <i> Noblesville Indiana </i>, 
+			Have some coding experience learning and writing code for 5+ years now. 
+			I'm taking this class to work towards an Informatics Minor.</p>
+		<hr />
+		<h2> <u> My I101 Expectations </u> </h2>
+		<p> I'm expecting to learn new and interesting concepts to help me move forward as I continue to
+			earn and work towards an Informatics minor. </p>
+		<hr />
+		<h2> College Bucket List </h2>
+		<p> <b> Go to oliver winery. </b> Seen the Oliver Winery every time I come into IU from my hometown,
+		and now that I'm old enough would like to go there and see what it's like. Only
+		ever heard good things about it. Something else I'd like to do would be go to one of the 
+		national parks that are south of Bloomington.</p>
+		<h3> I101 Labs </h3>
+		<ul>
+			<li><a href="http://pages.iu.edu/~graves5/i101/html1.html">HTML 1</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/html2.html">HTML 2</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/css1.html">CSS1</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/css2.html">CSS2</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/py1.html">Python1</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/py2.html">Python2</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/py3.html">Python3</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/py4.html">Python4</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/js1.html">JavaScript 1</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/js2.html">JavaScript 2</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/js3.html">JavaScript 3</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/js4.html">Javascript 4</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/db1.html">DataBase 1</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/db2.html">DataBase 2</a></li>
+			<li><a href="http://pages.iu.edu/~graves5/i101/db3.html">DataBase 3</a></li>
+		</ul>
+		<hr />
+		<h3>I101 Resources</h3>
+		<ol>
+			<li><a href="https://iuware.iu.edu/Windows">IU Ware</a></li>
+			<li><a href="https://uits.iu.edu/box">Box at IU</a></li>
+			<li><a href="https://uits.iu.edu/web-publishing">Web Publishing</a></li>
+		</ol>
+		<script>
+			function changeImages() 
+			{
+				var image = document.getElementById('myImage1');
+				if(image.src.match("Images/bannerpic.jpg")) {
+				image.src = "Images/Picture1.jpg";
+			}
+			else {
+				image.src = "Images/bannerpic.jpg";
+			}
+		}
+		</script>
+	
+	</body>
+	
+</html>

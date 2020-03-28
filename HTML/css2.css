@@ -1,0 +1,99 @@
+.riddle {
+	border-style: double;
+	border-width: 2px;
+	border-color: green;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-right: 7px;	
+	background-image: url('Images/desert.jpg');
+
+}
+
+.dumbledore {
+	border-style: dashed;
+	border-width: 7px;
+	border-color: purple;
+	padding-bottom: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	padding-left: 3px;
+	background-image: url('Images/smiley.gif');
+	background-repeat: no-repeat;
+	background-position: bottom-left;
+}
+div.container {border: 1px solid blue; }
+div.row {border: 1px solid red; }
+div.column { border: 1px solid green; }
+
+.redback {
+	background-color: red;
+	color: white;
+	border-color: black;
+	border-style: groove;
+	border-width: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.blueback {
+	background-color: blue;
+	color: yellow;
+	border-color: red;
+	border-style: outset;
+	border-width: 9px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.greenback {
+	background-color: green;
+	color: orange;
+	border-color: purple;
+	border-style: inset;
+	border-width: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.orangeback {
+	background-color: orange;
+	color: blue;
+	border-color: green;
+	border-style: ridge;
+	border-width: 2px;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	margin-left: 6px;
+	margin-right: 6px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.bluespan {
+	color: blue;
+}
+
+.redspan {
+	color: red;
+}

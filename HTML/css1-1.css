@@ -1,0 +1,26 @@
+table {
+	border-width: thin;
+	border-color: black;
+	border-style: solid;
+	}
+	
+.tablehead {
+			background-color: black;
+			color: blue;
+			font-size: 36px;
+			}
+
+.redbackground {
+background-color: red;
+}
+		
+.main {
+	font: arial;
+	background-color: purple;
+	font-size: 14px;
+}
+
+.greenbackground {
+	background-color: green;
+	font-size: 20px;
+}
