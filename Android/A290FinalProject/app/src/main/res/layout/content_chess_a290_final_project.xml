@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+content_chess_a290_final_project.xml
+This is the main content page for the chess part of the app where all the buttons and textviews are created.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ChessBackground">
+
+    <TextView
+        android:id="@+id/CMText"
+        android:layout_width="131dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="126dp"
+        android:text="@string/ChessName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/CMNewGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/ChessMainTextColor"/>
+
+    <Button
+        android:id="@+id/CMNewGame"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/ChessMenuNewGame"
+        app:layout_constraintBottom_toTopOf="@+id/CMAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CMText" />
+
+    <Button
+        android:id="@+id/CMAbout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/ChessMenuAbout"
+        app:layout_constraintBottom_toTopOf="@+id/CMMainMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CMNewGame" />
+
+    <Button
+        android:id="@+id/CMMainMenu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/ChessMenuMainMenu"
+        app:layout_constraintBottom_toTopOf="@+id/CMExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CMAbout" />
+
+    <Button
+        android:id="@+id/CMExit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/ChessMenuExit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CMMainMenu" />
+</android.support.constraint.ConstraintLayout>

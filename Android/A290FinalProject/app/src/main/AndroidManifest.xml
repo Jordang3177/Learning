@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+AndroidManifest.xml
+This is the main page for all the activities to be seen by the java project are.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.indiana.graves5.a290finalproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/AppName"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".A290FinalProject"
+            android:label="@string/AppName"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectSudoku"
+            android:label="@string/SudokuName">
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectTicTacToe"
+            android:label="@string/TicTacToeName">
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectChess"
+            android:label="@string/ChessName">
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectAbout"
+            android:label="@string/AboutName">
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectSudokuAbout"
+            android:label="@string/SudokuAboutName">
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectSudokuGame"
+            android:label="@string/SudokuName">
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectTicTacToeAbout"
+            android:label="@string/TicTacToeName">
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectChessAbout"
+            android:label="@string/ChessName">
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectTicTacToeGame"
+            android:label="@string/TicTacToeName">
+        </activity>
+        <activity
+            android:name="edu.indiana.graves5.a290finalproject.A290FinalProjectChessGame"
+            android:label="@string/ChessName">
+        </activity>
+    </application>
+
+</manifest>

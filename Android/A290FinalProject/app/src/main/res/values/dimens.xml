@@ -1,0 +1,16 @@
+<!--
+dimens.xml
+This is where we create the dimensions that are needed for use in the app.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="TicTacToeHorizontalMargin">15dp</dimen>
+    <dimen name="TicTacToeVerticalMargin">15dp</dimen>
+    <dimen name="ChessHorizontalMargin">10dp</dimen>
+    <dimen name="ChessVerticalMargin">10dp</dimen>
+</resources>

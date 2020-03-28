@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+a290_final_project_sudoku_about.xml
+This is where the about dialog for the Sudoku page will be displayed to the user.
+Created by: Jordan Graves
+Created on: 2/13/19
+Last Modified by: Jordan Graves
+Last Modified on: 3/1/2019
+Assignment/Project: A290 Android Development Final Project
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SudokuAboutScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/SudokuBackground">
+
+    <TextView
+        android:id="@+id/SudokuAboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SudokuAboutText"
+        android:textColor="@color/SudokuMainTextColor"
+        />
+
+</ScrollView>
