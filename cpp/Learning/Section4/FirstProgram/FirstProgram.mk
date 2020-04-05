@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=FirstProgram
 ConfigurationName      :=Debug
-WorkspacePath          :=/Users/jordangraves/Desktop/GitHub/Cpp/Learning/Section4
-ProjectPath            :=/Users/jordangraves/Desktop/GitHub/Cpp/Learning/Section4/FirstProgram
+WorkspacePath          :=/Users/jordangraves/Desktop/GitHub/Learning/CPP/Learning/Section4
+ProjectPath            :=/Users/jordangraves/Desktop/GitHub/Learning/CPP/Learning/Section4/FirstProgram
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jordan Graves
-Date                   :=10/03/2020
+Date                   :=05/04/2020
 CodeLitePath           :="/Users/jordangraves/Library/Application Support/CodeLite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -93,7 +93,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jordangraves/Desktop/GitHub/Cpp/Learning/Section4/FirstProgram/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jordangraves/Desktop/GitHub/Learning/CPP/Learning/Section4/FirstProgram/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 

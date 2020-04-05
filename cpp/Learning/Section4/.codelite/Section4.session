@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="/Users/jordangraves/Desktop/GitHub/Cpp/Learning/Section4/Section4.workspace">
+<Session Name="/Users/jordangraves/Desktop/GitHub/Learning/CPP/Learning/Section4/Section4.workspace">
   <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="/Users/jordangraves/Desktop/GitHub/Cpp/Learning/Section4/Section4.workspace" Name="m_workspaceName"/>
+  <wxString Value="/Users/jordangraves/Desktop/GitHub/Learning/CPP/Learning/Section4/Section4.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="/Users/jordangraves/Desktop/GitHub/Cpp/Learning/Section4/FirstProgram/main.cpp" Name="FileName"/>
+      <wxString Value="/Users/jordangraves/Desktop/GitHub/Learning/CPP/Learning/Section4/FirstProgram/main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="3" Name="CurrentLine"/>
+      <int Value="8" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

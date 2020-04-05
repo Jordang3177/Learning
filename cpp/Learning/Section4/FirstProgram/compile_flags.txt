@@ -4,4 +4,4 @@
 -I/Library/Developer/CommandLineTools/usr/include
 -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include
 -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks
--I/Users/jordangraves/Desktop/GitHub/Cpp/Learning/Section4/FirstProgram
+-I/Users/jordangraves/Desktop/GitHub/Learning/CPP/Learning/Section4/FirstProgram
