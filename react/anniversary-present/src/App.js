@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Aux from "./hoc/Aux/Aux";
-import Present from "./Containers/Present/Present";
+import Present from "./containers/Present/Present";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 

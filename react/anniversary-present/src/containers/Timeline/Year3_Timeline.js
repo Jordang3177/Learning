@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import YearElement from "../../Components/YearElement/YearElement";
-import BranchingLine from "../../Components/BranchingLine/BranchingLine";
+import Year3BranchingLine from "../../Components/BranchingLine/Year3BranchingLine";
 import TextFileReader from "../../hoc/FileReader/TextFileReader";
 
 class Timeline extends Component {
@@ -18,7 +18,7 @@ class Timeline extends Component {
     return (
       <div>
         <YearElement year={title} text={text} />
-        <BranchingLine year={year} />
+        <Year3BranchingLine year={year} />
       </div>
     );
   }

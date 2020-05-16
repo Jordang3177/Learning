@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { Route, NavLink, Switch } from "react-router-dom";
 import classes from "./Present.module.css";
 import Timeline from "../Timeline/Timeline";
+import Year1Timeline from "../Timeline/Year1Timeline";
+import Year2Timeline from "../Timeline/Year2_Timeline";
+import Year3Timeline from "../Timeline/Year3_Timeline";
+import Year4Timeline from "../Timeline/Year4_Timeline";
 import MainPage from "../../Components/MainPage/MainPage";
 import Year1Text from "../../Assets/Text/Year1/Year1.txt";
 import Year2Text from "../../Assets/Text/Year2/Year2.txt";
@@ -42,46 +46,34 @@ class Present extends Component {
                   Year 4
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/Year5" exact>
-                  Year 5
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/Year6" exact>
-                  Year 6
-                </NavLink>
-              </li>
             </ul>
           </nav>
         </header>
         <Switch>
-          <Route 
-            path="/" 
-            exact component={MainPage} />
-          <Route 
-            path="/Year1" 
-            render={(props) => <Timeline {...props} key = 'Year1' text = {Year1Text}/>} 
+          <Route path="/" exact component={MainPage} />
+          <Route
+            path="/Year1"
+            render={(props) => <Year1Timeline {...props} key="Year1" text={Year1Text} />}
           />
-          <Route 
-            path="/Year2" 
-            render={(props) => <Timeline {...props} key = 'Year2' text = {Year2Text}/>}
+          <Route
+            path="/Year2"
+            render={(props) => <Year2Timeline {...props} key="Year2" text={Year2Text} />}
           />
-          <Route 
-            path="/Year3" 
-            render={(props) => <Timeline {...props} key = 'Year3' text = {Year3Text}/>}
+          <Route
+            path="/Year3"
+            render={(props) => <Year3Timeline {...props} key="Year3" text={Year3Text} />}
           />
-          <Route 
-            path="/Year4" 
-            render={(props) => <Timeline {...props} key = 'Year4' text = {Year4Text}/>}
+          <Route
+            path="/Year4"
+            render={(props) => <Year4Timeline {...props} key="Year4" text={Year4Text} />}
           />
-          <Route 
-            path="/Year5" 
-            render={(props) => <Timeline {...props} key = 'Year5' text = {Year5Text}/>}
+          <Route
+            path="/Year5"
+            render={(props) => <Timeline {...props} key="Year5" text={Year5Text} />}
           />
-          <Route 
-            path="/Year6" 
-            render={(props) => <Timeline {...props} key = 'Year6' text = {Year6Text}/>}
+          <Route
+            path="/Year6"
+            render={(props) => <Timeline {...props} key="Year6" text={Year6Text} />}
           />
         </Switch>
       </div>
