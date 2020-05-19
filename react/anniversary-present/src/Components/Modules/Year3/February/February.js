@@ -1,0 +1,16 @@
+import React from "react";
+
+function February() {
+  return (
+    <div>
+      <p>
+        This was a hard month, and alot of unexpected things happened. We were stuck in
+        your hometown for this entire month. And even though we were not able to leave
+        your hometown i'm really glad I was able to spend this time with you even though
+        it wasn't planned.
+      </p>
+    </div>
+  );
+}
+
+export default February;
