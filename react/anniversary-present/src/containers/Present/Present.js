@@ -11,8 +11,6 @@ import Year1Text from "../../Assets/Text/Year1/Year1.txt";
 import Year2Text from "../../Assets/Text/Year2/Year2.txt";
 import Year3Text from "../../Assets/Text/Year3/Year3.txt";
 import Year4Text from "../../Assets/Text/Year4/Year4.txt";
-import Year5Text from "../../Assets/Text/Year5/Year5.txt";
-import Year6Text from "../../Assets/Text/Year6/Year6.txt";
 
 class Present extends Component {
   render() {
@@ -66,14 +64,6 @@ class Present extends Component {
           <Route
             path="/Year4"
             render={(props) => <Year4Timeline {...props} key="Year4" text={Year4Text} />}
-          />
-          <Route
-            path="/Year5"
-            render={(props) => <Timeline {...props} key="Year5" text={Year5Text} />}
-          />
-          <Route
-            path="/Year6"
-            render={(props) => <Timeline {...props} key="Year6" text={Year6Text} />}
           />
         </Switch>
       </div>
