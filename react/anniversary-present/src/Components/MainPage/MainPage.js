@@ -6,19 +6,20 @@ const mainpage = (props) => {
   return (
     <div className={classes.p2}>
       <p>
-        This is something I've been trying to make for a long time. I'm going to be honest
-        and say that this front page here isn't great, but I kept trying different things
-        and don't know the best way to do this. I just kept making it look really bad. So
-        I just left it as this for now till I can figure out a better look for this front
-        page. <br />
-        <br />
-        Also I know that this website isn't clean or look amazing, but I really do hope
-        that you like the idea and effort that I put into it. I'll keep coming back to
-        this page and updating it as time goes on and I'm hoping one day I can figure out
-        the best way to make it look good. <br />
-        <br />
-        But Happy Third Year Anniversary Honey. I love you so much and hope that we can be
-        together for a long time.
+        Welcome to Update 1.1. Where we are here to help you see what has been going on in the last few months
+        since the Third Year Anniversary in May. 
+        <br></br>
+        There are a few changes that have gone on here since you last saw this.
+        There are some changes that were made in Year 3, we added some more pictures and then if you look
+        there is an entirely new section for year 4 that goes until December of 2020. WOW!!
+        <br></br>
+        Pleaes explore around and have a good time, we are here to help so please reach out to us on WeChat
+        if you have any questions or you know of something that we missed. Thank you and now a message from our CEO
+        Jordan Graves.
+        <br></br>
+        <b>This website is for Ruolan Wu and only for Ruolan Wu. If you are not my baby then please leave,
+          If you are my baby, then Have fun looking around and I love you!!!!
+        </b>
       </p>
       <img src={Family1} className={classes.p1} alt="Family1" />
     </div>
