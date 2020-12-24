@@ -2,7 +2,18 @@ import React, { useState } from "react";
 import classes from "./BranchingLine.module.css";
 import Dot from "../Dot/Dot";
 import Modal from "../Modal/Modal";
+import January from "../Modules/Year4/January/January";
+import February from "../Modules/Year4/February/February";
+import March from "../Modules/Year4/March/March";
+import April from "../Modules/Year4/April/April";
 import May from "../Modules/Year4/May/May";
+import June from "../Modules/Year4/June/June";
+import July from "../Modules/Year4/July/July";
+import August from "../Modules/Year4/August/August";
+import September from "../Modules/Year4/September/September";
+import October from "../Modules/Year4/October/October";
+import November from "../Modules/Year4/November/November";
+import December from "../Modules/Year4/December/December";
 
 function Branchingline(props) {
   const [mayClicked, setMayClicked] = useState(false);
@@ -109,55 +120,77 @@ function Branchingline(props) {
         <May></May>
       </Modal>
       <Dot clicker={juneClickedHandler} date={"June " + props.year} side={"left"}></Dot>
-      <Modal show={juneClicked} modalClosed={juneExitedHandler}></Modal>
+      <Modal show={juneClicked} modalClosed={juneExitedHandler}>
+        <June></June>
+      </Modal>
       <Dot clicker={julyClickedHandler} date={"July " + props.year} side={"right"}></Dot>
-      <Modal show={julyClicked} modalClosed={julyExitedHandler}></Modal>
+      <Modal show={julyClicked} modalClosed={julyExitedHandler}>
+        <July></July>
+      </Modal>
       <Dot clicker={augustClickedHandler} date={"Aug " + props.year} side={"left"}></Dot>
-      <Modal show={augustClicked} modalClosed={augustExitedHandler}></Modal>
+      <Modal show={augustClicked} modalClosed={augustExitedHandler}>
+        <August></August>
+      </Modal>
       <Dot
         clicker={septemberClickedHandler}
         date={"Sept " + props.year}
         side={"right"}
       ></Dot>
-      <Modal show={septemberClicked} modalClosed={septemberExitedHandler}></Modal>
+      <Modal show={septemberClicked} modalClosed={septemberExitedHandler}>
+        <September></September>
+      </Modal>
       <Dot clicker={octoberClickedHandler} date={"Oct " + props.year} side={"left"}></Dot>
-      <Modal show={octoberClicked} modalClosed={octoberExitedHandler}></Modal>
+      <Modal show={octoberClicked} modalClosed={octoberExitedHandler}>
+        <October></October>
+      </Modal>
       <Dot
         clicker={novemberClickedHandler}
         date={"Nov " + props.year}
         side={"right"}
       ></Dot>
-      <Modal show={novemberClicked} modalClosed={novemberExitedHandler}></Modal>
+      <Modal show={novemberClicked} modalClosed={novemberExitedHandler}>
+        <November></November>
+      </Modal>
       <Dot
         clicker={decemberClickedHandler}
         date={"Dec " + props.year}
         side={"left"}
       ></Dot>
-      <Modal show={decemberClicked} modalClosed={decemberExitedHandler}></Modal>
+      <Modal show={decemberClicked} modalClosed={decemberExitedHandler}>
+        <December></December>
+      </Modal>
       <Dot
         clicker={januaryClickedHandler}
         date={"Jan " + (props.year + 1)}
         side={"right"}
       ></Dot>
-      <Modal show={januaryClicked} modalClosed={januaryExitedHandler}></Modal>
+      <Modal show={januaryClicked} modalClosed={januaryExitedHandler}>
+        <January></January>
+      </Modal>
       <Dot
         clicker={februaryClickedHandler}
         date={"Feb " + (props.year + 1)}
         side={"left"}
       ></Dot>
-      <Modal show={februaryClicked} modalClosed={februaryExitedHandler}></Modal>
+      <Modal show={februaryClicked} modalClosed={februaryExitedHandler}>
+        <February></February>
+      </Modal>
       <Dot
         clicker={marchClickedHandler}
         date={"Mar " + (props.year + 1)}
         side={"right"}
       ></Dot>
-      <Modal show={marchClicked} modalClosed={marchExitedHandler}></Modal>
+      <Modal show={marchClicked} modalClosed={marchExitedHandler}>
+        <March></March>
+      </Modal>
       <Dot
         clicker={aprilClickedHandler}
         date={"Apr " + (props.year + 1)}
         side={"left"}
       ></Dot>
-      <Modal show={aprilClicked} modalClosed={aprilExitedHandler}></Modal>
+      <Modal show={aprilClicked} modalClosed={aprilExitedHandler}>
+        <April></April>
+      </Modal>
     </div>
   );
 }

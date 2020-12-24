@@ -9,6 +9,7 @@ import China6 from "../../../../Assets/Pictures/Year 3/January/China6.jpg";
 import China7 from "../../../../Assets/Pictures/Year 3/January/China7.jpg";
 import China8 from "../../../../Assets/Pictures/Year 3/January/China8.jpg";
 import China9 from "../../../../Assets/Pictures/Year 3/January/China9.jpg";
+import ChineseNewYear1 from "../../../../Assets/Pictures/Year 3/January/ChineseNewYear1.jpg";
 
 function January() {
   return (
@@ -22,6 +23,7 @@ function January() {
       <img src={China7} className={classes.img1} alt="China7" />
       <img src={China8} className={classes.img2} alt="China8" />
       <img src={China9} className={classes.img1} alt="China9" />
+      <img src={ChineseNewYear1} className={classes.img2} alt="ChineseNewYear1" />
       <p>
         After I gradauted I knew that I had to come and see you before I started to work.
         So I booked a ticket to china and was planning on staying there for a month so we

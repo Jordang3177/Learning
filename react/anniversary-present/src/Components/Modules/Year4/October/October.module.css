@@ -1,0 +1,15 @@
+.img1 {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .img2 {
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .scroll {
+    overflow: scroll;
+  }
+  

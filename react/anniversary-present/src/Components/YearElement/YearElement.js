@@ -1,13 +1,13 @@
 import React from "react";
 import classes from "./YearElement.module.css";
-import Aux from "../../hoc/Aux/Aux";
+import Auxillary from "../../hoc/Auxillary/Auxillary";
 
 const yearelement = props => {
   return (
-    <Aux>
+    <Auxillary>
       <p className={classes.Year}>{props.year}</p>
       <div className={classes.Text}>{props.text}</div>
-    </Aux>
+    </Auxillary>
   );
 };
 
