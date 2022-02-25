@@ -1,10 +1,6 @@
 import React from "react";
 import classes from "./MainPage.module.css";
 import Family1 from "../../Assets/Pictures/MainPage/Family1.jpg";
-import {Year1} from "../../Year1"
-import {Year2} from "../../Year2"
-import {Year3} from "../../Year3"
-import {Year4} from "../../Year4"
 
 const mainpage = (props) => {
   return (
@@ -26,14 +22,6 @@ const mainpage = (props) => {
         </b>
       </p>
       <img src={Family1} className={classes.p1} alt="Family1" />
-      <h1>Year 1</h1>
-      <Year1 />
-      <h1>Year 2</h1>
-      <Year2 />
-      <h1>Year 3</h1>
-      <Year3 />
-      <h1>Year 4</h1>
-      <Year4 />
     </div>
   );
 };
